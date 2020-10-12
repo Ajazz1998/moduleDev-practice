@@ -159,7 +159,7 @@ li{
 }
 
 .story{
-    padding: 80px 0;
+    padding: 70px 0;
 }
 
 img{
@@ -204,7 +204,7 @@ img{
     background-repeat: no-repeat;
     background-size: cover;
     height: 60vh;
-    margin: 80px 0;
+    margin: 70px 0;
 }
 
 .w-content{
@@ -216,3 +216,110 @@ img{
     color: var(--second-color);
     margin-top: 15px;
 }
+
+.portfolio{
+    padding: 70px 0;
+    text-align: center;
+}
+
+.portfolio p{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: var(--main-color);
+}
+
+.portfolio .box{
+    margin-right: 20px;
+    text-align: center;
+}
+
+.portfolio .box p{
+   font-size: 20px;
+   margin-top: 13px;
+   margin-bottom: 10px;
+   font-weight: 300;
+   color: var(--black-color);
+   text-transform: capitalize;
+}
+
+.portfolio .box > div{
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+.portfolio .box img{
+    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transition: 200ms;
+    -webkit-transition: 200ms;
+    -moz-transition: 200ms;
+    -ms-transition: 200ms;
+    -o-transition: 200ms;
+}
+
+.portfolio .box img:hover{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+.portfolio .grid-fix{
+    margin-right: 0;
+    width: 94.5%;
+}
+
+
+.main-test{
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/sleepy_kid.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    margin: 70px 0;
+    color: var(--white-color);
+}
+
+.main-test > div{
+    text-align: center;
+}
+
+.client-testimonials-container  {
+    overflow: hidden;
+    color: var(--secondary-color);
+    padding: 0 200px;
+    text-align: center;
+  }
+  
+  .client-testimonial-item {
+    border-left: 5px solid var(--main-color);
+    font-size: .95rem;
+    margin: 2em 0;
+    padding: 0 1em;
+    color: var(--second-color);
+  }
+  
+  .client-name {
+    font-size: 1rem;
+  }
+  
+  .client-testimonial-switch {
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    height: .6rem;
+    margin: 0 .2rem;
+    outline: none;
+    width: .6rem;
+  }
+  
+  .active-carousel-switch {
+    transform: scale(1.5);
+  }
