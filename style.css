@@ -88,6 +88,11 @@ li{
     justify-content: space-between;
     padding: 10px 30px;
     border-bottom: 1px solid var(--white-color);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 2;
 }
 
 .main-nav ul{
@@ -276,6 +281,8 @@ img{
 }
 
 
+
+
 .main-test{
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/sleepy_kid.jpg');
     background-position: center;
@@ -323,3 +330,60 @@ img{
   .active-carousel-switch {
     transform: scale(1.5);
   }
+
+  .contact{
+      padding: 70px 0;
+  }
+
+  .contact h2{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .contact .grid-2 > div{
+    margin: 0 20px;
+  }
+
+  .contact .grid-2 form{
+   display: block;
+  }
+
+.contact .grid-2 form input[type="text"], .grid-2 form textarea{
+   display: block;
+   width: 100%;
+   padding: 12px;
+   border: 1px solid var(--main-color);
+   border-radius: 7px;
+   -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   -ms-border-radius: 7px;
+   -o-border-radius: 7px;
+   outline: none;
+   margin: 10px 0;
+}
+
+.contact .grid-2 form label{
+    padding: 5px;
+}
+
+.contact .grid-2 form button{
+    font-size: 15px;
+    background: var(--main-color);
+    padding: 10px 30px;
+ }
+ 
+ .contact .grid-2 form button:hover{
+     background: var(--black-color);
+     border: 1px solid var(--black-color);
+     
+ }
+ 
+ .contact .grid-2 form button a{
+     color: var(--white-color);
+     opacity: .8;
+ }
+
+.c-img img{
+    border-radius: 7px;
+    height: 95%;
+}
