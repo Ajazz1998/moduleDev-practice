@@ -387,3 +387,16 @@ img{
     border-radius: 7px;
     height: 95%;
 }
+
+.footer{
+    background: var(--main-color);
+}
+
+.footer .row{
+    color: var(--white-color);
+}
+
+.footer .row ul i{
+    color: var(--white-color);
+    font-size: 30px;
+}
