@@ -34,3 +34,16 @@ carouselSwitch.forEach((button, i) => {
     currentContainer(i + 1);
   });
 });
+
+document.getElementById("bar").addEventListener("click", () => {
+  const mainNav = document.getElementById("topnav");
+  const nav = document.getElementById("nav");
+
+  if(mainNav.style.display === "none"){
+    mainNav.style.display = "block";
+    nav.style.height = "29vh"
+  }else{
+    mainNav.style.display = "none"
+    nav.style.height = "8vh"
+  }
+})

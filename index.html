@@ -9,15 +9,16 @@
 </head>
 <body>
 
-    <header class="header">
-        <nav class="main-nav">
+    <header class="header" id="headers">
+        <nav class="main-nav" id="nav">
            <a href="./index.html"><img src="/images/logo-light.png" alt="logo"></a> 
-            <ul>
-                <li><a href="#">our story</a></li>
-                <li><a href="#">our work</a></li>
-                <li><a href="#">porfolio</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">contact</a></li>
+           <i class="fa fa-bars" id="bar"></i>
+            <ul id="topnav">
+                <li><a href="#storys">our story</a></li>
+                <li><a href="#works">our work</a></li>
+                <li><a href="#portfolios">porfolio</a></li>
+                <li><a href="#abouts">about</a></li>
+                <li><a href="#contacts">contact</a></li>
             </ul>
         </nav>
 
@@ -25,13 +26,13 @@
             <div>
                 <h1>Elvyre is a creative agency</h1>
                 <p>brand, advertising, digital, marketing. We think, we design, we execute. We get results. You get the picture.</p>
-                <button class="btn main-btn"><a href="#"><i class="fas fa-chevron-down fa-3x"></i></a></button>
+                <button class="btn main-btn"><a href="#storys"><i class="fas fa-chevron-down fa-3x"></i></a></button>
             </div>
 
         </div>
     </header>
 
-    <section class="story row">
+    <section class="story row" id="storys">
         <div class="grid-2">
             <div class="s-content">
                 <h2>Our Story</h2>
@@ -51,7 +52,7 @@
         </div>
     </section>
 
-    <seciton class="work">
+    <seciton class="work" id="works">
         <div class="main-work flex-center">
             <div class="w-content row">
                 <h2>More than just design</h2>
@@ -60,7 +61,7 @@
         </div>
     </seciton>
 
-    <section class="portfolio row">
+    <section class="portfolio row" id="portfolios">
         <h2>Take a look at some of our work</h2>
         <p>We are a creative agency that enjoys our work and everything we do, our portfolio is our shop window – so here are just a few selected examples from a collection of designs that we’ve had the pleasure of working on.</p>
 
@@ -97,7 +98,7 @@
         </div>
     </section>
     
-    <seciton class="test">
+    <seciton class="test" id="abouts">
         <div class="main-test flex-center">
             <div>
                 <h2>Client Testimonials</h2>
@@ -126,7 +127,7 @@
        </div>
     </seciton>
 
-    <section class="contact row">
+    <section class="contact row" id="contacts">
         <h2>Contact Us</h2>
         <div class="grid-2">
             <div class="c-img flex-center">
@@ -157,8 +158,13 @@
             <p>Call: 01594 123123</p>
     
             <ul>
-                <li><i class="fas fa-twitter"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-facebook"></i></li>
+                <li><i class="fab fa-google"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
             </ul>
+
+           <a href="#headers"> <i class="fa fa-arrow-up"></i></a>
         </div>
 
     </footer>

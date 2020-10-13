@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+
 }
 
 body{
@@ -9,11 +11,17 @@ body{
     font-weight: 300;
     line-height: 1.4;
     letter-spacing: 1px;
-    scroll-behavior: smooth;
      --main-color:#727c89;
      --second-color:#f6f6f6;
      --black-color: #000;
      --white-color:#fff;
+}
+
+header .fa-bars{
+    display: none;
+    color: var(--white-color);
+    font-size: 30px;
+    margin-top: 8px;
 }
 
 h1{
@@ -390,13 +398,78 @@ img{
 
 .footer{
     background: var(--main-color);
+    padding: 70px 0;
+    padding-bottom: 120px;
 }
 
 .footer .row{
     color: var(--white-color);
+    position: relative;
 }
+
+.footer .row ul{
+    display: flex;
+    position: absolute;
+    left: 40%;
+    margin-top: 20px;
+ }
+ 
+ .footer p{
+     margin: 8px 0;
+ }
+ 
+ .footer h2{
+     margin-bottom: 10px;
+ }
 
 .footer .row ul i{
     color: var(--white-color);
     font-size: 30px;
+    padding: 0 10px;
 }
+
+.footer .row .fa-arrow-up{
+    color: var(--black-color);
+    font-size: 40px;
+    font-weight: 900;
+    position: absolute;
+    right: 0;
+}
+
+
+@media screen and (max-width:700px){
+
+    .main-nav ul{
+        display: none;
+        margin: 10px 0;
+        position: absolute;
+        left: 40%;
+    }
+    .main-nav ul li{
+        margin: 10px 0;
+    }
+
+    header .fa-bars{
+        display: block;
+    }
+
+    .grid-2{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .grid-3{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .client-testimonials-container {
+        overflow: hidden;
+        color: var(--secondary-color);
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .row{
+        max-width: 500px;
+    }
+}
+
